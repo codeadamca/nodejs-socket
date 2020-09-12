@@ -4,7 +4,7 @@ This tutorial will walk you through the creatin of a simple Node.js and Socket.i
 
 ## Steps
 
-1. Create an HTML file with the required HTML tags and include the Socket.io JavScript file:
+1. Create an HTML file with the basic required HTML tags:
 
 ```html
 <!doctype html>
@@ -12,8 +12,6 @@ This tutorial will walk you through the creatin of a simple Node.js and Socket.i
   <head>
     
     <title>Node.js and Socket.io</title>
-    
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js'></script>
 
   </head>
   <body> 
@@ -22,13 +20,19 @@ This tutorial will walk you through the creatin of a simple Node.js and Socket.i
 </html>
 ```
 
-2. Add a button to the `body` section:
+2. Include the Socket.io CDN in the `head` section:
+
+```html
+<script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js'></script>
+```
+
+3. Add a button to the `body` section:
 
 ```html
 <button id="fromClient">From Client</button>
 ```
 
-3. After the button add JavaScript that will set up Socket.io, add a click event to the button, and send a message to the Node.js server when clicked:
+4. After the button add JavaScript that will set up Socket.io, add a click event to the button, and send a message to the Node.js server when clicked:
 
 ```html
 <script>
