@@ -1,42 +1,39 @@
 <!doctype html>
 <html>
-    <head>
+  <head>
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js'></script>
+
+  </head>
+  <body>
         
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js'></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <button id="fromClient">From Client</button>
 
-        <script>
-            
-        $(document).ready(function(){
-            
-            var socket = io();
+      <script>
 
-            socket.on('fromServer', function(data) {
+      var socket = io();
+
+      socket.on('fromServer', function(data) {
                 
-                console.log( 'ON: fromServer');
+        console.log( 'ON: fromServer');
                 
-            });
+      });
           
-            socket.on('time', function(data) {
+      socket.on('time', function(data) {
                 
-                console.log( 'ON: time');
+        console.log( 'ON: time');
                 
-            });
+      });
             
-            $('#fromClient').click(function(){
+      document.getElementById('fromClient').onclick = function(){
                
-                socket.emit('fromClient', { "message":"Sent from client!" });
-                console.log( 'EMIT: fromClient');
+        socket.emit('fromClient', { "message":"Sent from client!" });
+        console.log( 'EMIT: fromClient');
                 
-            });
+      }
             
-        });
+    </script>
         
-        </script>
-    </head>
-    <body>
-        
-        <button id="fromClient">From Client</button>
-        
-    </body>
+  </body>
+
 </html>
