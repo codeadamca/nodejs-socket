@@ -6,7 +6,7 @@ This tutorial will walk you through the creatin of a simple Node.js and Socket.i
 
 1. Create an HTML file with the required HTML tags and include the Socket.io JavScript file:
 
-'''html
+```html
 <!doctype html>
 <html>
   <head>
@@ -20,8 +20,36 @@ This tutorial will walk you through the creatin of a simple Node.js and Socket.i
        
   </body>
 </html>
-'''
+```
 
+2. Add a button to the `body` section:
+
+```html
+<button id="fromClient">From Client</button>
+```
+
+3. After the button add JavaScript that will set up Socket.io, add a click event to the button, and send a message to the Node.js server when clicked:
+
+```html
+<script>
+
+var socket = io();
+
+socket.on('fromServer', function(data) {
+  console.log( 'ON: fromServer');
+});
+
+socket.on('time', function(data) {
+  console.log( 'ON: time');
+});
+
+document.getElementById('fromClient').onclick = function(){
+  socket.emit('fromClient', { "message":"Sent from client!" });
+  console.log( 'EMIT: fromClient');
+}
+
+</script>
+```
 ## Tutorial Requirements:
 
 * [Visual Studio Code](https://code.visualstudio.com/) or [Brackets](http://brackets.io/) (or any code editor)
