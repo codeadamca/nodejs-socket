@@ -114,6 +114,7 @@ node app.js
 
 * [Visual Studio Code](https://code.visualstudio.com/) or [Brackets](http://brackets.io/) (or any code editor)
 * [Node.js](https://nodejs.org/en/)
+* [Socket.io](https://socket.io/)
 
 Full tutorial URL: https://codeadam.ca/learning/nodejs-socket.html
 
