@@ -1,4 +1,4 @@
-# nodejs-socket
+# A Sample Interaction using Node.js and Socket
 
 This tutorial will walk you through the creation of a simple Node.js and Socket.io example. It includes sending a message from an HTML page to a Node.js server and a message from a Node.js server to an HTML page. 
 
