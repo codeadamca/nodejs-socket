@@ -110,9 +110,11 @@ node app.js
 
 9. Open the HTML file using `http://localhost:3000`, open the browser console, and test.
 
-## Tutorial Requirements:
+***
 
-* [Visual Studio Code](https://code.visualstudio.com/) or [Brackets](http://brackets.io/) (or any code editor)
+## Repo REsources
+
+* [Visual Studio Code](https://code.visualstudio.com/)
 * [Node.js](https://nodejs.org/en/)
 * [Socket.io](https://socket.io/)
 
