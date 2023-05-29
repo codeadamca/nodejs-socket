@@ -118,7 +118,7 @@ node app.js
 * [Node.js](https://nodejs.org/en/)
 * [Socket.io](https://socket.io/)
 
-Full tutorial URL: https://codeadam.ca/learning/nodejs-socket.html
+> Full tutorial URL: https://codeadam.ca/learning/nodejs-socket.html
 
 <a href="https://codeadam.ca">
 <img src="https://codeadam.ca/images/code-block.png" width="100">
