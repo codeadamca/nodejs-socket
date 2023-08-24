@@ -115,7 +115,7 @@ This tutorial will walk you through the creation of a simple Node.js and Socket.
 
 ***
 
-## Repo REsources
+## Repo Resources
 
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Node.js](https://nodejs.org/en/)
